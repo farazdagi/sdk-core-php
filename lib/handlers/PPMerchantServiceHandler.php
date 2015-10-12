@@ -30,7 +30,7 @@ class PPMerchantServiceHandler extends PPGenericServiceHandler {
 
 		$endpoint = '';
 		$credential = $request->getCredential();
-		if(isset($options['port']) && isset($config['service.EndPoint.'.$options['port']]))
+		if(isset($config['service.EndPoint.'.$options['port']]))
 		{
 			$endpoint = $config['service.EndPoint.'.$options['port']];
 		}
